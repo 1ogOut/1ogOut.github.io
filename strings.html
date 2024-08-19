@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<!--assignment 6.1 User Input Val.
+    1. allow variable input of first and last name and zip code
+    2. Make variable containing first name + Space + Last name
+    3.Check for character amouhnt >20% error
+        -less than 20=good entry
+    4.Check Zip Code accuracy 
+    5. Good Name ang zip give secret message
+add creative like font, image, etc.
+comment on code
+    Joshua Wooten \ 06/19/24 \ Joshwoot1@uat.edu
+    -->
+
+<head>
+    <title>validation</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="checkCreds.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>User Validation Page</h1>
+    </header>
+    <nav>
+        <!--Links to other pages-->
+    <h2>
+        <a href="./Index-1.html">Home</a><br>
+        <a href="Boards.html">Boards</a><br>
+        <a href="game.html">game</a></br>
+    </h2>
+         <audio autoplay controls id="audioControl" src="Groovy Kaiju - Godzilla Got Remastered - 01 Mighty Morphin' -Remastered-.mp3"></audio>
+    </nav>
+    <h2>Input Validation</h2>
+    <div id="loginStatus">Press submit to login.</div>
+    <p>
+        please submit the following data for validation.
+    </p>
+    <form id="creditSubmit" onSubmit="return false">
+        First Name: <input type="text" id="fName"></br>
+        Last Name: &nbsp;<input type="text" id="lName"></br>
+        Zip Code: &nbsp;&nbsp;<input type="text" id="zCode"></br>
+        <input type="submit" onclick="checkCreds()">
+    </form>
+    
+    <!--writes down the correct zipcode-->
+   <!-- Is zip code <a id="zipCodeDis"></a>? -->
+    <!--creates zipTest variable-->
+   <!-- <div id="zipTest"></div> 
+    <script>
+        //creates the ZipCode
+        var zipCode = "11037"
+        //test the Zipcode. Idk how, I took this from my teacher who took it from a webstie
+        var isValidZip = /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(zipCode);
+        //checks if its a valid zip code
+        document.getElementById("zipTest").innerHTML = isValidZip;
+        //makes zipcode display = zipcode
+        document.getElementById("zipCodeDis").innerHTML = zipCode;
+    </script>
+-->
+<br>
+<br>
+<!--palindrome checker
+Make an application to check if something is a palindrom or not, assingment 9.1-->
+<h2 id="rainbowText">Palindrome checker</h2>
+<br>
+<div id="palinStatus">Palindrome Status</div>
+<form id="palinSubmit" onsubmit="return false">
+    Enter Possible Palindrome: <input type="text" id="palinInput"><br>
+    <input type="submit" onclick="checkPalin();" class="button">
+</form> 
+</body>
+
+</html>
+</body>
+
+</html>
